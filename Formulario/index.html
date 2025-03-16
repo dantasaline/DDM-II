@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Frutas</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Frutas</h1>
+        <form action="process.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fruit">Fruta Favorita:</label>
+            <select id="fruit" name="fruit" required>
+                <option value="">Selecione uma fruta</option>
+                <option value="maçã">Maçã</option>
+                <option value="banana">Banana</option>
+                <option value="laranja">Laranja</option>
+                <option value="uva">Uva</option>
+                <option value="manga">Manga</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
